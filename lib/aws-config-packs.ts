@@ -120,7 +120,7 @@ export class ConfigRecorderEnabledPromise extends cdk.Construct {
               inlinePolicies: {
                 configRecorderS3Access: iam.PolicyDocument.fromJson(recorderPolicyDoc)
               },
-              managedPolicies: [iam.ManagedPolicy.fromAwsManagedPolicyName('service-role/AWSConfigRole')]
+              managedPolicies: [iam.ManagedPolicy.fromAwsManagedPolicyName('service-role/AWS_ConfigRole')]
             });    
         
             this.ConfigRecorder = new cfg.CfnConfigurationRecorder(this, 'ConfigRecorder', {
