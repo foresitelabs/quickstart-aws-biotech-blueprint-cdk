@@ -52,7 +52,7 @@ export class AwsStartupBlueprintStack extends cdk.Stack {
       ManagmentVPC: blueprintVPCs.ManagmentVPC,
       ProductionVpc: blueprintVPCs.ProductionVpc,
       DevelopmentVpc: blueprintVPCs.DevelopmentVpc,      
-      TopLevelDomain: "corp"      
+      TopLevelDomain: "foresitelabsdev"      
     });
     
     // Region Restriction 
